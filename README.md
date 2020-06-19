@@ -8,7 +8,7 @@ Download the The project file.
 
 ### Prerequisites
 
-Software- Mongo DB, Good Browser(Chrome,Safari,etc.), Code editor (vsCode,sublime,etc.)
+Concepts- Mongo DB, Good Browser(Chrome,Safari,etc.), Code editor (vsCode,sublime,etc.)
 
 
 ### Installing
