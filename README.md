@@ -2,6 +2,9 @@
 
 COVID-19 Tracker and Helper
 
+## Project Description
+This project was completed as a part of group project for INFO6150 Web Design Experience Engineering course.
+
 ## Getting Started
 
 Download the The project file.
