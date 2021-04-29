@@ -1,5 +1,5 @@
 'use strict';
-const authJwt = require("./authJwt");
+const authJwt = require("./authJWT");
 const verifySignUp = require("./verifySignUp");
 
 /**
