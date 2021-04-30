@@ -16,6 +16,7 @@ export class AuthService {
   getToken(): string {
     return localStorage.getItem('token');
   }
+
   /**
    * Post method to "signin" user. 
    * @param email 

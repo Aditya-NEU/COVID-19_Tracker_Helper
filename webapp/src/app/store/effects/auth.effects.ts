@@ -37,8 +37,10 @@ export class AuthEffects {
     switchMap(payload => {
       return this.authService.logIn(payload.email, payload.password).pipe(
         map((user) => {
+          console.log("hereererererererrererere>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
           console.log(user);
-          return new LogInSuccess({ token: user.token, email: payload.email });
+          console.log(user.accessToken);
+          return new LogInSuccess({ token: user.accessToken, email: payload.email });
         })
       )
         .pipe(catchError((error) => {
@@ -55,7 +57,9 @@ export class AuthEffects {
   LogInSuccess: Observable<any> = this.actions.pipe(
     ofType(AuthActionTypes.LOGIN_SUCCESS),
     tap((user) => {
-      console.log("In here at loginsuccess effects");
+      console.log("In here at loginsuccess effects>>>>>>>>>>>>>>>>>>>>>>>>>");
+      console.log(user)
+      console.log("Printing token>>>>>>>>>>>>>>>>>>>>>>>>>>>"+user.payload.token)
       localStorage.setItem('token', user.payload.token);
       console.log('Going to home page');
       this.router.navigateByUrl('/home');
